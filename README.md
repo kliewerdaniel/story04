@@ -70,7 +70,7 @@ Program Workflow:
 	3.	Loads or generates image descriptions according to the selected persona.
 
 	4.	Generates a reflective, stylistic story in the voice of the persona.
-    
+
 	5.	Saves the generated story in the stories/ folder.
 
 ⸻
@@ -78,16 +78,28 @@ Program Workflow:
 ## Persona Schema
 
 The persona YAML includes detailed fields:
+
 	•	name: Persona’s name or identifier
+
 	•	tone: Overall emotional tone (e.g., optimistic, melancholic)
+
 	•	mood: Narrative mood (e.g., calm, agitated)
+
 	•	formality: Level of formality in speech or writing
+
 	•	key_phrases: Distinctive phrases or expressions often used
+
 	•	description: General description of persona characteristics
-	•	humor_profile: Details on humor type, delivery style, frequency, and targets
+
+	•	humor_profile: Details on humor type, delivery style, frequency, and 
+    targets
+
 	•	values_and_themes: Core values, recurring thematic elements, worldview
+
 	•	psychological_fingerprint: Cognitive style, emotional tendencies, inner conflicts
+
 	•	rhetorical_style: Sentence structure, use of metaphor, persuasive tactics
+    
 	•	lexical_and_stylistic_traits: Favorite words, rhythm, punctuation style
 
 ⸻
