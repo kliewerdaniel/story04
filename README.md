@@ -49,16 +49,16 @@ pip install -r requirements.txt
 
 ⸻
 
-Usage
+## Usage
 
 Run the program from the command line:
 ```bash
 python main.py --input-texts /path/to/writing_samples --input-images /path/to/images
 ```
-	•	--input-texts : Directory containing .txt files with writing samples to extract personas.
-	•	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
+	--input-texts : Directory containing .txt files with writing samples to extract personas.
+	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
 
-Program Workflow:
+## Program Workflow:
 	1.	Extracts personas from each writing sample.
 	2.	Lets you select a persona to use for story generation.
 	3.	Loads or generates image descriptions according to the selected persona.
@@ -67,7 +67,7 @@ Program Workflow:
 
 ⸻
 
-Persona Schema
+## Persona Schema
 
 The persona YAML includes detailed fields:
 	•	name: Persona’s name or identifier
@@ -84,19 +84,19 @@ The persona YAML includes detailed fields:
 
 ⸻
 
-Caching
+## Caching
 
 Image analysis results are cached in the cache/ folder to avoid repeated costly analysis calls. The program prompts you to use cached data when available.
 
 ⸻
 
-Logging
+## Logging
 
 The program logs key steps and errors with timestamps, helping you track progress and debug issues.
 
 ⸻
 
-Extending & Customizing
+## Extending & Customizing
 	•	Modify or extend the persona extraction prompt for other psychological traits.
 	•	Add support for additional image formats or analysis APIs.
 	•	Adapt story generation to produce different narrative styles or formats.
@@ -104,14 +104,14 @@ Extending & Customizing
 
 ⸻
 
-Troubleshooting
+## Troubleshooting
 	•	Ensure Ollama is correctly installed and models are downloaded.
 	•	Check your input folders contain valid .txt and image files.
 	•	Review logs for error messages to pinpoint issues.
 
 ⸻
 
-License
+## License
 
 MIT License © 2025 Daniel Kliewer
 
