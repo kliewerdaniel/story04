@@ -1,4 +1,4 @@
-Certainly! Here is your README content formatted correctly in Markdown with consistent indentation and spacing:
+
 
 # Persona Extraction & Story Generation
 
