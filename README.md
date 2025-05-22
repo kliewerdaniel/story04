@@ -115,4 +115,3 @@ License
 
 MIT License © 2025 Daniel Kliewer
 
-If you want, I can save this as a `README.md` file for you. Just let me know!
