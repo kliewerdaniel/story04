@@ -34,27 +34,27 @@ This program analyzes writing samples to extract rich psychological and stylisti
    cd story04
 ```
 2.	Create and activate a virtual environment (optional but recommended):
-
+```bash
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
-
+```
 
 3.	Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 
 4.	Ensure Ollama is installed and the gemma3:27b and mistral-small:24b-instruct-2501-q8_0 models are available locally.
 
 ⸻
 
-Usage
+## Usage
 
 Run the program from the command line:
-
+```bash
 python main.py --input-texts /path/to/writing_samples --input-images /path/to/images
-
+```
 	•	--input-texts : Directory containing .txt files with writing samples to extract personas.
 	•	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
 
@@ -67,7 +67,7 @@ Program Workflow:
 
 ⸻
 
-Persona Schema
+## Persona Schema
 
 The persona YAML includes detailed fields:
 	•	name: Persona’s name or identifier
@@ -84,19 +84,19 @@ The persona YAML includes detailed fields:
 
 ⸻
 
-Caching
+## Caching
 
 Image analysis results are cached in the cache/ folder to avoid repeated costly analysis calls. The program prompts you to use cached data when available.
 
 ⸻
 
-Logging
+## Logging
 
 The program logs key steps and errors with timestamps, helping you track progress and debug issues.
 
 ⸻
 
-Extending & Customizing
+##  Extending & Customizing
 	•	Modify or extend the persona extraction prompt for other psychological traits.
 	•	Add support for additional image formats or analysis APIs.
 	•	Adapt story generation to produce different narrative styles or formats.
@@ -104,14 +104,14 @@ Extending & Customizing
 
 ⸻
 
-Troubleshooting
+## Troubleshooting
 	•	Ensure Ollama is correctly installed and models are downloaded.
 	•	Check your input folders contain valid .txt and image files.
 	•	Review logs for error messages to pinpoint issues.
 
 ⸻
 
-License
+## License
 
 MIT License © 2025 Daniel Kliewer
 
