@@ -1,3 +1,4 @@
+Here’s your correctly formatted and cleaned up Markdown (.md) version:
 
 # Persona Extraction & Story Generation
 
@@ -20,45 +21,49 @@ This program analyzes writing samples to extract rich psychological and stylisti
 - Python 3.8+
 - Ollama Python client installed and configured
 - Local image analysis server running at `http://localhost:11434/api/generate` (or update URL in code)
-- `PyYAML` for YAML parsing/writing
-- `requests` for HTTP requests
+- [`PyYAML`](https://pypi.org/project/PyYAML/) for YAML parsing/writing
+- [`requests`](https://pypi.org/project/requests/) for HTTP requests
 
 ---
 
 ## Installation
 
 1. **Clone the repository:**
-```bash
-   git clone https://github.com/kliewerdaniel/story04.git
-   cd story04
-```
 
-2.	Create and activate a virtual environment (optional but recommended):
+```bash
+git clone https://github.com/kliewerdaniel/story04.git
+cd story04
+```
+	2.	Create and activate a virtual environment (optional but recommended):
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 ```
-
-3.	Install dependencies:
+	3.	Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+	4.	Ensure Ollama is installed and the following models are available locally:
 
-4.	Ensure Ollama is installed and the gemma3:27b and mistral-small:24b-instruct-2501-q8_0 models are available locally.
+	•	gemma3:27b
+	•	mistral-small:24b-instruct-2501-q8_0
 
 ⸻
 
-## Usage
+Usage
 
 Run the program from the command line:
-```bash
-python main.py --input-texts /path/to/writing_samples --input-images /path/to/images
-```
-	--input-texts : Directory containing .txt files with writing samples to extract personas.
-	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
 
-## Program Workflow:
+python main.py --input-texts /path/to/writing_samples --input-images /path/to/images
+
+Arguments
+	•	--input-texts : Directory containing .txt files with writing samples to extract personas.
+	•	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
+
+⸻
+
+Program Workflow
 	1.	Extracts personas from each writing sample.
 	2.	Lets you select a persona to use for story generation.
 	3.	Loads or generates image descriptions according to the selected persona.
@@ -67,7 +72,7 @@ python main.py --input-texts /path/to/writing_samples --input-images /path/to/im
 
 ⸻
 
-## Persona Schema
+Persona Schema
 
 The persona YAML includes detailed fields:
 	•	name: Persona’s name or identifier
@@ -84,34 +89,33 @@ The persona YAML includes detailed fields:
 
 ⸻
 
-## Caching
+Caching
 
-Image analysis results are cached in the cache/ folder to avoid repeated costly analysis calls. The program prompts you to use cached data when available.
-
-⸻
-
-## Logging
-
-The program logs key steps and errors with timestamps, helping you track progress and debug issues.
+Image analysis results are cached in the cache/ folder to avoid repeated costly analysis calls. The program will prompt you to use cached data when available.
 
 ⸻
 
-## Extending & Customizing
-	•	Modify or extend the persona extraction prompt for other psychological traits.
-	•	Add support for additional image formats or analysis APIs.
-	•	Adapt story generation to produce different narrative styles or formats.
-	•	Integrate with other LLM providers or APIs.
+Logging
+
+The program logs key steps and errors with timestamps to help you track progress and debug issues.
 
 ⸻
 
-## Troubleshooting
-	•	Ensure Ollama is correctly installed and models are downloaded.
-	•	Check your input folders contain valid .txt and image files.
-	•	Review logs for error messages to pinpoint issues.
+Extending & Customizing
+	•	Modify or extend the persona extraction prompt for additional psychological traits.
+	•	Add support for more image formats or external analysis APIs.
+	•	Adapt the story generation logic for different narrative styles or structures.
+	•	Integrate with other LLM providers or custom APIs.
 
 ⸻
 
-## License
+Troubleshooting
+	•	Ensure Ollama is correctly installed and required models are downloaded.
+	•	Check that your input folders contain valid .txt and image files.
+	•	Review logs for detailed error messages to identify issues.
+
+⸻
+
+License
 
 MIT License © 2025 Daniel Kliewer
-
