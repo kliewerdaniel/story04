@@ -62,10 +62,15 @@ Arguments:
 	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
 
 Program Workflow:
+
 	1.	Extracts personas from each writing sample.
+
 	2.	Lets you select a persona to use for story generation.
+
 	3.	Loads or generates image descriptions according to the selected persona.
+
 	4.	Generates a reflective, stylistic story in the voice of the persona.
+    
 	5.	Saves the generated story in the stories/ folder.
 
 ⸻
