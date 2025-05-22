@@ -28,21 +28,22 @@ This program analyzes writing samples to extract rich psychological and stylisti
 ## Installation
 
 1. **Clone the repository:**
-   ```bash
+```bash
    git clone https://github.com/kliewerdaniel/story04.git
    cd story04
+```
 
 	2.	Create and activate a virtual environment (optional but recommended):
-
+```bash
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
-
+```
 
 	3.	Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 
 	4.	Ensure Ollama is installed and the gemma3:27b and mistral-small:24b-instruct-2501-q8_0 models are available locally.
 
