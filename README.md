@@ -55,6 +55,8 @@ Run the program from the command line:
 ```bash
 python main.py --input-texts /path/to/writing_samples --input-images /path/to/images
 ```
+
+Arguments:
 	•	--input-texts : Directory containing .txt files with writing samples to extract personas.
 	•	--input-images: Directory containing .jpg, .png, or .jpeg images to analyze.
 
